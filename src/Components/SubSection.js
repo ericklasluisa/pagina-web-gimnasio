@@ -3,8 +3,9 @@ import foto4 from "../assets/foto4.png";
 import foto3 from "../assets/foto3.png";
 import foto2 from "../assets/foto2.png";
 import foto1 from "../assets/foto1.png";
+import Subscription from "./Subscription";
 
-const SubSection = ({ toggleModal, formData, setFormData }) => {
+const SubSection = ({ toggleModal, formData, setFormData, isModalOpen }) => {
   const [subData, setSubData] = useState(() => {
     let data = window.localStorage.getItem("formData");
     if (data) {
@@ -56,9 +57,9 @@ const SubSection = ({ toggleModal, formData, setFormData }) => {
   return (
     <div
       id="suscripcion"
-      className="max-w-xxl mt-20 mb-0 mr-10 ml-0 p-10 flex flex-col md:flex-row md:space-x-8 m-10"
+      className="w-screen flex-1 bg-hero-pattern bg-cover bg-fixed bg-left max-sm:bg-center max-lg:bg-center flex items-center"
     >
-      <div className="flex-1 md:w-1/2">
+      <div className="md:w-1/2">
         <p className="text-[#f04e3c] text-4xl font-bold relative before:absolute before:w-20 before:h-1 before:bg-[#f04e3c] before:top-[50%] before:left-0 pl-24 before:translate-y-[-50%] mb-10">
           SUSCRIPCIÓN
         </p>
@@ -113,12 +114,18 @@ const SubSection = ({ toggleModal, formData, setFormData }) => {
               alt="Membership"
               className="max-w-xs mb-2 w-30"
             />
-            <h3 className="text-lg font-semibold">
+            <h3 className="text-lg font-semibold text-white">
               MEMBRESIA: {getMembershipText(subData.membresia)}
             </h3>
           </>
         )}
       </div>
+      <Subscription
+        isModalOpen={isModalOpen}
+        toggleModal={toggleModal}
+        formData={formData}
+        setFormData={setFormData}
+      />
     </div>
   );
 };

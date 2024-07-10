@@ -3,7 +3,7 @@ import img from "../assets/img-6.jpg";
 
 const About = () => {
   return (
-    <section id="about" className=" w-screen min-h-screen">
+    <section id="about" className=" w-screen flex-1">
       <div className=" max-container flex justify-center items-center gap-24 padding-hero-y padding-x h-full max-xl:gap-7 max-lg:flex-col">
         <div className=" flex-1 w-full">
           <div className=" bg-[orangered] flex justify-end pt-10 pl-10 max-sm:pt-5 max-sm:pl-5">

@@ -8,13 +8,13 @@ const Nav = ({ nav, toggleModal }) => {
 
   return (
     <header
-      className={`w-full duration-500 ${
+      className={`w-full duration-500 bg-black z-50 ${
         nav ? "fixed bg-black top-0 left-0 z-30" : "absolute"
       }`}
     >
       <nav className="max-w-[1540px] m-auto py-6 px-6 max-lg:px-12 flex justify-between items-center gap-14 max-xl:gap-5 max-sm:py-4 max-sm:px-6">
         <a
-          href="#home"
+          href="/"
           className=" font-semibold text-5xl flex justify-center items-center text-white gap-5"
         >
           <img src={logo} alt="logo" width={60} height={60} />

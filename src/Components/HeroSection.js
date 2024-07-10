@@ -5,7 +5,7 @@ const HeroSection = ({ toggleModal }) => {
   return (
     <section
       id="home"
-      className=" w-screen min-h-screen bg-hero-pattern bg-cover bg-fixed bg-left max-sm:bg-center max-lg:bg-center"
+      className=" w-screen flex-1 bg-hero-pattern bg-cover bg-fixed bg-left max-sm:bg-center max-lg:bg-center"
     >
       <motion.div
         initial={{ x: -500, opacity: 0 }}

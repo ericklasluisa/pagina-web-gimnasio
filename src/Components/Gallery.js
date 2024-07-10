@@ -13,7 +13,7 @@ const Gallery = () => {
   return (
     <section
       id="gallery"
-      className="flex max-lg:flex-col w-full min-h-screen bg-service-pattern bg-cover bg-fixed items-center justify-center max-lg:bg-center max-sm:bg-center sm:min-h-min p-4"
+      className="flex flex-1 max-lg:flex-col w-full bg-service-pattern bg-cover bg-fixed items-center justify-center max-lg:bg-center max-sm:bg-center sm:min-h-min p-4"
     >
       <div className="w-full padding-hero-y padding-x" style={{ flex: 0.5 }}>
         <div className="flex justify-between items-end max-lg:flex-col max-lg:items-start max-lg:gap-5 max-sm:mb-20">
