@@ -1,15 +1,17 @@
 <h1 align="center" id="title">Desarrollo de una Aplicación Web</h1>
 
-<p id="description">Desarrollo de aplicación web utilizando la librería React, en conjunto con TailwindCSS</p>
+<p id="description">Desarrollo de aplicación web utilizando la librería React y React-Router, en conjunto con TailwindCSS</p>
 
 <p>Link a la aplicación web: https://pagina-web-gimnasio.vercel.app/ </p>
 
 <h2>🧐 Características</h2>
 
-El portafolio se dividió en las siguientes secciones:
+La aplicación se dividió en las siguientes secciones:
 
 - Inicio
 - Información
+- Galeria
+- Suscripción
 - Contacto
 
 <h2>🛠️ Pasos de instalación:</h2>
@@ -45,4 +47,5 @@ http://localhost:3000/
 Tecnologías utilizadas en el proyecto:
 
 - React
+- React-Router
 - TailwindCSS
